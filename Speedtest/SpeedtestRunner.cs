@@ -1,13 +1,10 @@
 using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using System.Net.Http;
 using System.Net.NetworkInformation;
-using System.Threading;
 using System.Threading.Tasks;
-using ByteSizeLib;
 using Speedtest.Settings;
+using Speedtest.Shared;
 
 namespace Speedtest
 {

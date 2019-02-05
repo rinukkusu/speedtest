@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Speedtest
+namespace Speedtest.Shared
 {
     public class SpeedtestResult
     {

@@ -1,0 +1,2 @@
+* * * * * /speedtest/Speedtest/Speedtest inode | /speedtest/Speedtest.InfluxDb/Speedtest.InfluxDb >> /var/log/cron.log 2>&1
+
