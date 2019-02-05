@@ -38,6 +38,14 @@ To build the applications you will need .NET Core 2.2 installed, other than that
 
 ## Docker
 
+To run this software as a docker container you can use the following command (replace the InfluxDB url):
+
 ```bash
 sudo docker run -t -i -e INFLUXDB_URL='http://192.168.0.100:8086' rinukkusu/speedtest-influxdb
 ```
+
+## Grafana dashboard
+
+In the `grafana` subfolder you will find a [`speedtest.json`](https://github.com/rinukkusu/speedtest/blob/master/grafana/speedtest.json) which is the dashboard shown below that you can add to your Grafana instance:
+
+![Dashboard example](https://github.com/rinukkusu/speedtest/raw/master/grafana/example.png)
