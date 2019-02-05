@@ -2,6 +2,8 @@
 
 This is a very simple speedtesting tool for your network with InfluxDB integration.
 
+> Measuring Upload speed is currently not possibly yet!
+
 ## Usage
 
 To just measure your speed it's `Speedtest [source]`:
