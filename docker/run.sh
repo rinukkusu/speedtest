@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # prepend env variables
-env | egrep '^INFLUX' | cat - /tmp/speedtest.cron > /etc/cron.d/speedtest
+env | egrep '^INFLUX|SPEEDTEST_SOURCE' | cat - /tmp/speedtest.cron > /etc/cron.d/speedtest
 chmod 0644 /etc/cron.d/speedtest
 crontab /etc/cron.d/speedtest
 
