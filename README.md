@@ -39,6 +39,5 @@ To build the applications you will need .NET Core 2.2 installed, other than that
 ## Docker
 
 ```bash
-sudo docker build --rm -t mylittlespeedtest .
-sudo docker run -t -i -e INFLUXDB_URL='http://192.168.0.100:8086' mylittlespeedtest
+sudo docker run -t -i -e INFLUXDB_URL='http://192.168.0.100:8086' rinukkusu/speedtest-influxdb
 ```
