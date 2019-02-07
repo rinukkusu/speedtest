@@ -29,8 +29,17 @@ namespace Speedtest
         {
             var runSettings = _settings.GetTestfileBySource(source);
 
-            var speedResult = await TestDownloadSpeed(runSettings.Url);
-            var pingResult = await TestPing(runSettings.Url);
+            SpeedResult speedResult = null;
+            SpeedResult pingResult = null;
+            
+            try {
+                speedResult = await TestDownloadSpeed(runSettings.Url);
+            }
+            catch(Exception){}
+            try {
+                pingResult = await TestPing(runSettings.Url);
+            }
+            catch(Exception){}
 
             return new SpeedtestResult(speedResult, null, pingResult, source);
         }
